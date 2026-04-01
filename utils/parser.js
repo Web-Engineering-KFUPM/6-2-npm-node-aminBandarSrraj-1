@@ -1,12 +1,11 @@
 import _ from "lodash";
 
 export function parseNumbers(input) {
-    results = parseInt(str, input)
-  return {results};
+  const numbers = _.map(input, (str) => Number(str));
+  return _.compact(numbers);
 }
 
 export function isValidOperation(operation) {
-    results = false
-    if(input === "add" || input === "subtract" ||input === "multiply" ||input === "divide" ) results = true;
-  return {results};
+ const validOps = ["add", "subtract", "multiply", "divide"];
+    return _.includes(validOps, operation);
 }
