@@ -1,9 +1,12 @@
 import _ from "lodash";
 
 export function parseNumbers(input) {
-  return {};
+    results = parseInt(str, input)
+  return {results};
 }
 
 export function isValidOperation(operation) {
-  return {};
+    results = false
+    if(input === "add" || input === "subtract" ||input === "multiply" ||input === "divide" ) results = true;
+  return {results};
 }

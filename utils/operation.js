@@ -1,14 +1,18 @@
 export function add(numbers) {
-  return {};
+    results = numbers[0]+numbers[1]+numbers[2];
+  return {results};
 }
 export function subtract(numbers) {
-  return {};
+  results = numbers[0]-numbers[1]-numbers[2];
+  return {results};
 }
 
 export function multiply(numbers) {
-  return {};
+  results = numbers[0]*numbers[1]*numbers[2];
+  return {results};
 }
 
 export function divide(numbers) {
-  return {};
+  results = numbers[0]/numbers[1]/numbers[2];
+  return {results};
 }
